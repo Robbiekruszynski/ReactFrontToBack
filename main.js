@@ -60,6 +60,8 @@ console.log(people2);
 
 const arr = [1, 2, 3];
 const arr2 = [...arr, 4];
+
+//USING BOTH THE SPREAD OPERATOR AND FILTER TO REMOVE 2 FROM THE ARRAY
 const arr3 = [...arr.filter(num => num !== 2)];
 console.log(arr3);
 
@@ -76,6 +78,23 @@ const person2 = {
 console.log(person2);
 
 //DESTRUCTURING
+
+const profile = {
+  name: "John Doe",
+  address: {
+    street: "40 Main st",
+    city: "Boston"
+  },
+  hobbies: ["movies", "music"]
+};
+
+//BRACKETS = PULLING NAME OUT OF PROFILE
+
+const { address, hobbies } = profile;
+
+const { street, city } = profile.address;
+
+console.log(street, city);
 
 //CLASSES
 
